@@ -16,7 +16,8 @@
         <div class="menu-logo">
             
                
-            
+            <div class="logo"><a href="#0"><img class="logo-img" src="svg/noemi-logo.svg" alt="logo"></a>
+            </div>
             
             <nav class="burger-menu">
             <button class="burger-button">
@@ -33,8 +34,7 @@
             </ul>
         </nav>
        
-        <div class="logo"><a href="#0"><img class="logo-img" src="svg/noemi-logo.svg" alt="logo"></a>
-        </div>
+        
     </div>
         <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
 
@@ -232,15 +232,19 @@
             </section>
 
             <form class="search">
-                <span class="form-visualy-hidden"> Используйте поиск!</span>
+                <label class="search-group">
+                
                 <input class="field-search" name="query" placeholder="Найти..." required>
-                <button class="button-search"><img class="search-img" src="svg/search.svg" alt="search"></button>
+           
+                <button class="button-search"><span class="form-visualy-hidden"> Используйте поиск!</span></button>
+            </label>
             </form>
             <form class="subsribe">
+                <h3 class="subscription-title">
+                    Рассылка
+                </h3>
                 <label class="subscription-group">
-                    <h3 class="subscription-title">
-                        Рассылка
-                    </h3>
+                    
                     <span class="form-visualy-hidden"> Введите ваш email!</span>
                     <input class="field-subsribe" type="email" placeholder="Ваш email-адрес ">
                 </label>
@@ -264,18 +268,18 @@
             <section class="thems">
                 <h2 class="thems-title"><a class="link-thems-title" href="#0">темы</a></h2>
                 <ul class="them-list">
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Красота <span
-                                class="number-decor">12</span></a></li>
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Здоровье <span
-                                class="number-decor">4</span></a></li>
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Образ жизни <span
-                                class="number-decor">145</span></a></li>
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Музыка <span
-                                class="number-decor">28</span></a></li>
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Спорт <span
-                                class="number-decor">62</span></a></li>
-                    <li class="thems-list-items"><a class="link-thems" href="#0">Йога <span
-                                class="number-decor">8</span></a></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Красота </a><span
+                        class="number-decor">12</span></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Здоровье </a><span
+                        class="number-decor">4</span></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Образ жизни </a><span
+                        class="number-decor">145</span></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Музыка </a><span
+                        class="number-decor">28</span></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Спорт </a><span
+                        class="number-decor">62</span></li>
+                    <li class="thems-list-items"><a class="link-thems" href="#0">Йога </a><span
+                        class="number-decor">8</span></li>
                 </ul>
 
             </section>
@@ -286,7 +290,12 @@
         <div class="products">
             
             <article class="box-products ">
-                <div class="box-products-img box-products-img1 "></div>
+                <picture > 
+                    <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                    <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)" >
+                    <img src="images/shop-item-desk1.jpg" alt="shop-item-desk1">
+                </picture>
                 <div class="boreder-product-style">
                     <div class="product-info">
                         <h2 class="product-title">Подушки на диван</h2>
@@ -303,7 +312,12 @@
                 </div>
             </article>
             <article class="box-products box-products2">
-                <div class="box-products-img box-products-img2 "></div>
+                <picture > 
+                    <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                    <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)" >
+                    <img src="images/shop-item-desk2.jpg" alt="shop-item-desk2">
+                </picture>
                 <div class="boreder-product-style">
                     <div class="product-info">
                         <h2 class="product-title">Кукла «Зайчик»</h2>
@@ -319,7 +333,12 @@
                 </div>
             </article>
             <article class="box-products box-products3">
-                <div class="box-products-img box-products-img3 "></div>
+                <picture > 
+                    <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                    <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)" >
+                    <img src="images/shop-item-desk3.jpg" alt="shop-item-desk3">
+                </picture>
                 <div class="boreder-product-style">
                     <div class="product-info">
                         <h2 class="product-title">Шестиугольная рамка</h2>
@@ -360,9 +379,10 @@
         <cite class="copyright"><a class="copyright-link" href="#0">Copyright © 2009–2019 City Blog LLC.</a> </cite>
 
     </footer>
-    <div class="popap visually-hidden">
+    <!--<div class="popap">
         <div class="popup-container">
             <div class="feedback">
+                
                 <h3 class="feedback-title">ваш фидбек</h3>
                 <div class="select">
                     <label class="select-grope">
@@ -395,15 +415,16 @@
                 <div class="input-text">
                     <label class="text">
                         <span class="question-text">Раскажите, какой контент вы хоте ли бы видеть на нашем сайте?</span>
-                        <input type="text" class="field-answer" placeholder="Может, больше рецептов?">
+                        <textarea  class="field-answer" placeholder="Может, больше рецептов?"></textarea>
                     </label>
+                    <button class="send-answer">отправить</button>
                 </div>
-                <button class="send-answer">отправить</button>
+                
                 <button class="popup-close" type="button"></button>
 
             </div>
         </div>
-    </div>
+    </div>-->
 
 </body>
 

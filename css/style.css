@@ -27,10 +27,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #666666;
-  height: 423px;
   position: relative;
   z-index: 0;
   padding-top: 26px;
+  padding-bottom: 80px;
 }
 
 .header::after {
@@ -49,12 +49,12 @@ body {
 
 .menu-logo {
   display: flex;
-  flex-direction: row-reverse;
+ 
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
-  padding-left: 35px;
+ 
 }
 
 .logo-img {
@@ -69,7 +69,7 @@ body {
 
 .menu-item {
   display: inline-block;
-  padding-right: 31px;
+ margin-left: 20px;
 }
 
 .link-menu {
@@ -90,7 +90,7 @@ body {
   /*font-size: 45px;*/
   font-size: 4vw;
   line-height: 1.6;
-  padding-top: 73px;
+  margin-top: 73px;
   max-width: 58.4%;
   margin-right: auto;
   margin-left: auto;
@@ -103,13 +103,13 @@ body {
   margin: 59px auto 0;
   max-width: 1200px;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 
 }
 
 .main-content {
-  padding-left: 15px;
   width: 100%;
-  /* padding-right: 43px;*/
   max-width: 67.34%;
   box-sizing: border-box;
 }
@@ -123,13 +123,10 @@ body {
 .content-box {
   display: flex;
   margin-bottom: 61px;
-
-  /* max-height: 294px;*/
 }
 
-.content-post {
-  width: 50%;
-}
+/*.content-post {
+ }*/
 
 .content-link-list {
   margin: 0;
@@ -138,7 +135,7 @@ body {
 
 .content-list-item {
   display: inline-block;
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .content-link {
@@ -197,12 +194,13 @@ body {
 
 .new-content {
   max-width: 348px;
+  margin-left: 60px;
 }
 
 .new-content-box {
   display: flex;
   margin-bottom: 22px;
-  padding-left: 62px;
+  
 }
 
 .new-content-post {
@@ -212,9 +210,9 @@ body {
 
 .new-title {
   text-align: center;
-  margin-top: -11px;
+ margin: 0;
   margin-bottom: 0;
-  padding-left: 55px;
+
 }
 
 .link-new-title {
@@ -229,7 +227,8 @@ body {
   content: "";
   display: block;
   width: 66px;
-  margin-left: 114px;
+ margin-left: auto;
+ margin-right: auto;
   border-top: 3px solid rgb(181, 159, 91);
   opacity: 0.4;
   margin-bottom: 29px;
@@ -269,18 +268,23 @@ body {
 
 
 .search {
-  display: flex;
+
   margin-top: 59px;
   margin-bottom: 42px;
-  padding-left: 61px;
+ 
+}
+.search-group{
+  display: flex;
+  align-items:center;
 }
 
 .field-search {
   box-sizing: border-box;
   height: 48px;
-  width: 222px;
+  width: 100%;
   display: inline-block;
   font-size: 13px;
+  
   background-color: #f4f7f6;
   color: rgba(0, 0, 0, 0.541);
   border: 0;
@@ -311,6 +315,10 @@ body {
   width: 48px;
   border: 0;
   background-color: #b59f5b;
+  background-image: url(../svg/search.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
 }
 
 .button-search:hover {
@@ -332,11 +340,7 @@ body {
 }
 
 .subsribe {
-  display: flex;
-  padding-left: 44px;
-  align-items: center;
-  flex-direction: column;
-  margin: 0px auto 26px;
+ margin: 0px auto 26px;
 }
 
 .subscription-title:after {
@@ -345,15 +349,18 @@ body {
   width: 66px;
   border-top: 3px solid rgb(181, 159, 91);
   opacity: 0.4;
-  margin-left: 100px;
+ margin-left: auto;
+ margin-right: auto;
   margin-top: 11px;
   margin-bottom: 24px;
 }
-
+.subscription-group{
+  display: flex;
+}
 .field-subsribe {
   box-sizing: border-box;
   height: 48px;
-  width: 270px;
+  width: 100%;
   display: inline-block;
   font-size: 13px;
   background-color: #f4f7f6;
@@ -361,6 +368,7 @@ body {
   color: rgba(0, 0, 0, 0.541);
   border: 0;
   padding-left: 13px;
+  padding-right: 13px;
 }
 
 .field-subsribe:focus {
@@ -372,7 +380,7 @@ body {
   margin-top: 16px;
   box-sizing: border-box;
   height: 48px;
-  width: 270px;
+  width: 100%;
   border: 0;
   background-color: #b59f5b;
   letter-spacing: 0.5px;
@@ -389,7 +397,7 @@ body {
 
 .tags {
   margin-bottom: 42px;
-  padding-left: 63px;
+ 
 }
 
 .tags-title {
@@ -399,6 +407,8 @@ body {
 }
 
 .tegs-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -415,7 +425,8 @@ body {
   content: "";
   display: block;
   width: 66px;
-  margin-left: 104px;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 3px solid rgb(181, 159, 91);
   opacity: 0.4;
   margin-top: 8px;
@@ -443,11 +454,7 @@ body {
   border-color: #b59f5b;
 }
 
-.thems {
-  display: flex;
-  padding-left: 63px;
-  flex-direction: column;
-}
+
 
 .thems-title {
   margin: 0;
@@ -467,32 +474,41 @@ body {
   content: "";
   display: block;
   width: 66px;
-  margin-left: 104px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 6px;
   margin-bottom: 21px;
   border-top: 3px solid rgb(181, 159, 91);
   opacity: 0.4;
 }
+.thems-list-items{
+display: block;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 11px;
+  margin-bottom: 11px;}
 
 .link-thems {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   color: #0f0d0e;
+  content: "";
+  
 }
 
 .link-thems:hover {
   color: rgb(181, 159, 91);
 }
 
-.link-thems:after {
+/* {
   content: "";
   display: block;
   width: 100%;
   border-top: 1px solid #eeeeee;
   margin-top: 11px;
   margin-bottom: 11px;
-}
+}*/
 
 .them-list {
   list-style: none;
@@ -508,7 +524,7 @@ body {
 }
 
 .footer {
-  display: flex;
+  
   width: 70.7%;
   flex-direction: column;
   margin: 86px auto 40px;
@@ -516,13 +532,13 @@ body {
 
 .conteiner-icons {
   box-sizing: border-box;
-  height: 83px;
+ 
   width: 100%;
   background-color: #f4f7f6;
   text-align: center;
-  padding-top: 32px;
-  /* padding-left: 476px;
-    padding-right: 450px;*/
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
 }
 
 .social-list {
@@ -532,7 +548,8 @@ body {
 
 .social-list-item {
   display: inline-block;
-  margin-right: 22px;
+  margin-right: 0;
+  margin-right: 30px;
 }
 
 .social-icon {
@@ -572,9 +589,10 @@ body {
 }
 
 .copyright {
+  display: block;
   text-align: center;
   margin-top: 67px;
-  margin-left: 11px;
+ 
 }
 
 .copyright-link {
@@ -617,18 +635,13 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 320px;
+  min-height: 320px;
 }
 
 .style-border {
   outline: solid 3px rgb(181, 159, 91);
   width: 90%;
-  /*height: 145px;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  max-height: 93%;
-}
+ }
 
 .trend-box {
   display: flex;
@@ -641,6 +654,8 @@ body {
   background-position: center center;
   background-size: cover;
   background-color: #666666;
+  padding-bottom: 20px;
+  padding-left: 25px;
 
 }
 
@@ -685,8 +700,12 @@ body {
 
 .trends-list-item {
   display: inline-block;
+  margin-left: 25px;
 }
-
+.trends-link-list{
+  margin: 0;
+  padding: 0;
+}
 .trends-link {
   display: block;
   text-decoration: none;
@@ -745,41 +764,24 @@ body {
   margin-bottom: 29px;
   margin-top: 8px;
 }
-
+.shop{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .products {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .box-products {
   width: 25%;
   display: flex;
   flex-direction: column;
-  max-width: 298px;
-  
-  
 }
-.box-products-img{
- min-height: 205px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #666666;
-}
-.box-products-img1{
-  background-image:url(../images/shop-item-desk1.jpg);
-
-}
-.box-products-img2{
-  background-image:url(../images/shop-item-desk2.jpg);
-
-}
-.box-products-img3{
-  background-image:url(../images/shop-item-desk3.jpg);
-
-}
-
 .box-products:nth-child(2) {
   margin-left: 113px;
   margin-right: 113px;
@@ -883,7 +885,8 @@ body {
   background-color: white;
   position: relative;
   max-width: 389px;
-
+  
+  padding-bottom: 64px;
 
 }
 
@@ -994,12 +997,12 @@ select>option {
 .field-answer {
   height: 131px;
   width: 100%;
-  outline: none;
+ 
   border: 0;
   background-color: #f4f7f6;
   box-sizing: border-box;
 
-  color: transparent;
+ 
 }
 .field-answer:focus{
   outline: none;
@@ -1016,7 +1019,7 @@ select>option {
   text-transform: uppercase;
   color: white;
   margin-top: 27px;
-  margin-bottom: 53px;
+  
 }
 .send-answer:hover{
   background-color: #323232;
@@ -1028,7 +1031,7 @@ select>option {
   }
  
 
-@media(min-width: 641px) and (max-width: 1200px){
+@media(min-width: 641px) and (max-width: 1199px){
   .menu{
     display: none;
   }
